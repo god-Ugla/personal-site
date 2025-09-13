@@ -1,0 +1,69 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --light_blue: rgb(193, 232, 251);
+  --dark_blue: rgb(39, 61, 137);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 500;
+  color: var(--dark_blue);
+  text-decoration: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.light-mode {
+  --color-primary: #ffffff;
+  --color-secondary: #213547;
+  --color-accent: var(--dark_blue);
+}
+
+.dark-mode {
+    --color-primary: #242424;
+    --color-secondary: rgba(255, 255, 255, 0.87);
+    --color-accent: var(--light_blue);
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+a {
+  color: var(--color-accent);
+}
